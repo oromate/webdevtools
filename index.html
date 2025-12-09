@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">FERNANDO</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="content-wrapper">
+                    <div class="profile-img">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="text-content">
+                        <p>Olá, eu sou o <b>Fernando</b>, um desenvolvedor full stack com muito interesse pela análise de dados. Minha motivação vai além de escrever código: é usar o computador como uma ferramenta para resolver problemas de forma eficaz. Sou adepto do "go horse extreme" com foco em entregar valor funcional de forma ágil, otimizando fluxos e priorizando o que realmente importa.</p>
+                        <p>Meu editor predileto é o Vim por ser muito divertido e sou um crítico contumaz das práticas de coleta excessiva de dados e vigilância digital, defendendo uma web mais transparente.</p>
+                        <div class="hobbies">
+                            <h4>Meus Hobbies:</h4>
+                            <ul>
+                                <li><i class="fas fa-masks-theater"></i> Teatro</li>
+                                <li><i class="fas fa-guitar"></i> Violão</li>
+                                <li><i class="fas fa-chess"></i> Xadrez</li>
+                                <li><i class="fas fa-dice"></i> RPG</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="section">
+            <div class="container">
+                <h2 class="section-title">Formação</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formação Acadêmica</h3>
+                        <p><strong>Curso:</strong> Tecnologia em Ciência de Dados</p>
+                        <p><strong>Instituição:</strong> UNINTER</p>
+                        <p><strong>Ano de Conclusão:</strong> 2027</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Habilidades</h3>
+                        <ul>
+                            <li>Web Full Stack</li>
+                            <li>DevOps e Cloud</li>
+                            <li>Git e Vim</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li>Português - Nativo</li>
+                            <li>Inglês - Avançado</li>
+                            <li>Espanhol - Intermediário</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Portfólio</h2>
+                <div class="portfolio-container">
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <h3>Paciência É Uma Virtude</h3>
+                        <p>Homenagem a essa virtude de muita importância desde sempre.</p>
+                        <a href="https://pacienciaeumavirtude.com.br" class="portfolio-link" target="_blank">Ver projeto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Tétrades</h3>
+                        <p>Encontre as notas dos acordes e escalas no braço do violão.</p>
+                        <a href="https://tetrades.com.br" class="portfolio-link" target="_blank">Ver projeto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Entre em contato</h3>
+                        <p>Preencha o formulário ao lado para me enviar uma mensagem. Responderei o mais breve possível.</p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Indaiatuba, SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" action="#" method="post">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
